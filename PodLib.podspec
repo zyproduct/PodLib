@@ -9,10 +9,12 @@ Pod::Spec.new do |s|
   s.author           = { 'zyproduct' => '397937550@qq.com' }
   s.source           = { :git => 'https://github.com/zyproduct/PodLib.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
-  s.source_files = 'PodLib/**/*'
-  
+  # s.source_files = 'PodLib/**/*'
+  s.vendored_frameworks = 'product/SakuraKit.framework'  
+
+
   # s.resource_bundles = {
   #   'PodLib' => ['PodLib/Assets/*.png']
   # }

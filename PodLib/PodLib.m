@@ -16,7 +16,10 @@
 
 + (void)secondLyrics {
     NSLog(@"some has gone, some remind");
-    NSLog(@"");
+}
+
++ (void)thirdLyrics {
+    NSLog(@"all those memories that i member");
 }
 
 @end
