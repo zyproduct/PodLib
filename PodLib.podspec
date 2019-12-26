@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'PodLib/Classes/**/*'
+  s.source_files = 'PodLib/**/*'
   
   # s.resource_bundles = {
   #   'PodLib' => ['PodLib/Assets/*.png']
