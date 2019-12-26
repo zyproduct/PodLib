@@ -10,7 +10,9 @@
 
 @interface PodLib : NSObject
 
-+ (void)logSome;
++ (void)firstLyrics;
+
++ (void)secondLyrics;
 
 @end
 

@@ -10,8 +10,13 @@
 
 @implementation PodLib
 
-+ (void)logSome {
++ (void)firstLyrics {
     NSLog(@"there some places i remmber");
+}
+
++ (void)secondLyrics {
+    NSLog(@"some has gone, some remind");
+    NSLog(@"");
 }
 
 @end
