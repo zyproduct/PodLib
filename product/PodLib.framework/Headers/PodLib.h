@@ -10,6 +10,8 @@
 
 @interface PodLib : NSObject
 
++ (instancetype)shareInstance;
+
 - (void)firstLyrics;
 
 - (void)secondLyrics;
