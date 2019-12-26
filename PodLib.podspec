@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PodLib'
-  s.version          = '0.0.1'
+  s.version          = '0.0.3'
   s.summary          = 'A short description of PodLib.'
 
   s.homepage         = 'https://github.com/zyproduct/PodLib'
