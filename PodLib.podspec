@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
 
   # s.source_files = 'PodLib/**/*'
-  s.vendored_frameworks = 'product/SakuraKit.framework'  
+  s.vendored_frameworks = 'product/PodLib.framework'  
 
 
   # s.resource_bundles = {
