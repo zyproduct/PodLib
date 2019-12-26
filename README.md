@@ -22,7 +22,7 @@ pod 'PodLib'
 
 ## Author
 
-zyproduct, linzy30@taikanglife.com
+zyproduct
 
 ## License
 
