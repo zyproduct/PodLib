@@ -11,6 +11,8 @@
 		0A0655C523B47F6000686B12 /* PodLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0655C423B47F6000686B12 /* PodLibTests.m */; };
 		0A0655C723B47F6000686B12 /* PodLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A0655B923B47F6000686B12 /* PodLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A0655D123B47FA700686B12 /* PodLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0655D023B47FA700686B12 /* PodLib.m */; };
+		0AC1721823B4A4A600B6D3CE /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AC1721623B4A4A600B6D3CE /* Reachability.h */; };
+		0AC1721923B4A4A600B6D3CE /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC1721723B4A4A600B6D3CE /* Reachability.m */; };
 		AABD14A09A00A98890C7D4C5 /* libPods-PodLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B388EA194D984097B93F28 /* libPods-PodLib.a */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +34,8 @@
 		0A0655C423B47F6000686B12 /* PodLibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PodLibTests.m; sourceTree = "<group>"; };
 		0A0655C623B47F6000686B12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A0655D023B47FA700686B12 /* PodLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PodLib.m; sourceTree = "<group>"; };
+		0AC1721623B4A4A600B6D3CE /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		0AC1721723B4A4A600B6D3CE /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		71394F5FFF710EFF6F8D2A3A /* Pods-PodLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodLib.debug.xcconfig"; path = "Target Support Files/Pods-PodLib/Pods-PodLib.debug.xcconfig"; sourceTree = "<group>"; };
 		80ACFD29E80B473EC2C6CB5C /* Pods-PodLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodLib.release.xcconfig"; path = "Target Support Files/Pods-PodLib/Pods-PodLib.release.xcconfig"; sourceTree = "<group>"; };
 		E3B388EA194D984097B93F28 /* libPods-PodLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PodLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +84,8 @@
 		0A0655B823B47F6000686B12 /* PodLib */ = {
 			isa = PBXGroup;
 			children = (
+				0AC1721623B4A4A600B6D3CE /* Reachability.h */,
+				0AC1721723B4A4A600B6D3CE /* Reachability.m */,
 				0A0655B923B47F6000686B12 /* PodLib.h */,
 				0A0655D023B47FA700686B12 /* PodLib.m */,
 				0A0655BA23B47F6000686B12 /* Info.plist */,
@@ -110,7 +116,6 @@
 				71394F5FFF710EFF6F8D2A3A /* Pods-PodLib.debug.xcconfig */,
 				80ACFD29E80B473EC2C6CB5C /* Pods-PodLib.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -122,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A0655C723B47F6000686B12 /* PodLib.h in Headers */,
+				0AC1721823B4A4A600B6D3CE /* Reachability.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AC1721923B4A4A600B6D3CE /* Reachability.m in Sources */,
 				0A0655D123B47FA700686B12 /* PodLib.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
