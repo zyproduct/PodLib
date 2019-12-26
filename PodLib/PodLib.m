@@ -7,19 +7,38 @@
 //
 
 #import "PodLib.h"
+#import <CocoaLumberjack/CocoaLumberjack.h>
 
 @implementation PodLib
 
-+ (void)firstLyrics {
-    NSLog(@"there some places i remmber");
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+
+static PodLib *single = nil;
++ (instancetype)shareInstance {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        single = [[PodLib alloc] init];
+        [single configLogs];
+    });
+    return single;
 }
 
-+ (void)secondLyrics {
-    NSLog(@"some has gone, some remind");
+- (void)configLogs {
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
 }
 
-+ (void)thirdLyrics {
-    NSLog(@"all those memories that i member");
+
+- (void)firstLyrics {
+    DDLogInfo(@"there some places i remmber");
 }
+
+- (void)secondLyrics {
+    DDLogInfo(@"some has gone, some remind");
+}
+
+- (void)thirdLyrics {
+    DDLogInfo(@"all those memories that i member");
+}
+
 
 @end

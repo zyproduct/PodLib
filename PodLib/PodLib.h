@@ -10,11 +10,11 @@
 
 @interface PodLib : NSObject
 
-+ (void)firstLyrics;
+- (void)firstLyrics;
 
-+ (void)secondLyrics;
+- (void)secondLyrics;
 
-+ (void)thirdLyrics;
+- (void)thirdLyrics;
 @end
 
 
