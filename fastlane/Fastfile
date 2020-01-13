@@ -18,10 +18,22 @@ default_platform(:ios)
 platform :ios do
   desc "Build Podlib Framework"
   lane :podlib do
+  
+    git_pull
+    last_git_commit
+    sh "rm -f ./Podfile.lock"
+
     xcbuild(
       scheme: "PodLibAgg",
       workspace: "PodLib.xcworkspace"
     )
 
+  end
+
+  after_all do
+    git_add(path:'.')
+    git_commit(path: '.',message: "PodLib Framework")
+    git_pull
+    push_to_git_remote
   end
 end
