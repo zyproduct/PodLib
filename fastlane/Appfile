@@ -1,0 +1,8 @@
+app_identifier("com.wawayaya.lionet.PodLib") # The bundle identifier of your app
+apple_id("lzyswork@sina.cn") # Your Apple email address
+
+itc_team_id("117288863") # App Store Connect Team ID
+team_id("L9E89VMHQT") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile

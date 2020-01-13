@@ -6,6 +6,20 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		0AFAA1B223CC3D86001E1526 /* PodLibAgg */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0AFAA1B323CC3D86001E1526 /* Build configuration list for PBXAggregateTarget "PodLibAgg" */;
+			buildPhases = (
+				0AFAA1B623CC3E5C001E1526 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = PodLibAgg;
+			productName = PodLibAgg;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		0A0655C023B47F6000686B12 /* PodLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0655B623B47F6000686B12 /* PodLib.framework */; };
 		0A0655C523B47F6000686B12 /* PodLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0655C423B47F6000686B12 /* PodLibTests.m */; };
@@ -36,6 +50,11 @@
 		0A0655D023B47FA700686B12 /* PodLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PodLib.m; sourceTree = "<group>"; };
 		0AC1721623B4A4A600B6D3CE /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		0AC1721723B4A4A600B6D3CE /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		0AFAA1A623CC3D35001E1526 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		0AFAA1A823CC3D35001E1526 /* ActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionViewController.h; sourceTree = "<group>"; };
+		0AFAA1A923CC3D35001E1526 /* ActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionViewController.m; sourceTree = "<group>"; };
+		0AFAA1AC23CC3D35001E1526 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		0AFAA1AE23CC3D35001E1526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71394F5FFF710EFF6F8D2A3A /* Pods-PodLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodLib.debug.xcconfig"; path = "Target Support Files/Pods-PodLib/Pods-PodLib.debug.xcconfig"; sourceTree = "<group>"; };
 		80ACFD29E80B473EC2C6CB5C /* Pods-PodLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodLib.release.xcconfig"; path = "Target Support Files/Pods-PodLib/Pods-PodLib.release.xcconfig"; sourceTree = "<group>"; };
 		E3B388EA194D984097B93F28 /* libPods-PodLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PodLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +85,7 @@
 			children = (
 				0A0655B823B47F6000686B12 /* PodLib */,
 				0A0655C323B47F6000686B12 /* PodLibTests */,
+				0AFAA1A523CC3D35001E1526 /* PodLibAgg */,
 				0A0655B723B47F6000686B12 /* Products */,
 				B23B37DFC223EA3A2D88DD6D /* Pods */,
 				2F35123D628DA67F65D20934 /* Frameworks */,
@@ -100,6 +120,18 @@
 				0A0655C623B47F6000686B12 /* Info.plist */,
 			);
 			path = PodLibTests;
+			sourceTree = "<group>";
+		};
+		0AFAA1A523CC3D35001E1526 /* PodLibAgg */ = {
+			isa = PBXGroup;
+			children = (
+				0AFAA1A623CC3D35001E1526 /* Media.xcassets */,
+				0AFAA1A823CC3D35001E1526 /* ActionViewController.h */,
+				0AFAA1A923CC3D35001E1526 /* ActionViewController.m */,
+				0AFAA1AB23CC3D35001E1526 /* MainInterface.storyboard */,
+				0AFAA1AE23CC3D35001E1526 /* Info.plist */,
+			);
+			path = PodLibAgg;
 			sourceTree = "<group>";
 		};
 		2F35123D628DA67F65D20934 /* Frameworks */ = {
@@ -186,6 +218,9 @@
 					0A0655BE23B47F6000686B12 = {
 						CreatedOnToolsVersion = 11.3;
 					};
+					0AFAA1B223CC3D86001E1526 = {
+						CreatedOnToolsVersion = 11.3;
+					};
 				};
 			};
 			buildConfigurationList = 0A0655B023B47F6000686B12 /* Build configuration list for PBXProject "PodLib" */;
@@ -202,6 +237,7 @@
 			projectRoot = "";
 			targets = (
 				0A0655B523B47F6000686B12 /* PodLib */,
+				0AFAA1B223CC3D86001E1526 /* PodLibAgg */,
 				0A0655BE23B47F6000686B12 /* PodLibTests */,
 			);
 		};
@@ -225,6 +261,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0AFAA1B623CC3E5C001E1526 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Sets the target folders and the final framework product.\n# 如果工程名称和Framework的Target名称不一样的话，要自定义FMKNAME\n# 例如: FMK_NAME = \"MyFramework\"\nFMK_NAME=${PROJECT_NAME}\necho FMK_NAME\n\n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nINSTALL_DIR=${SRCROOT}/Products/${FMK_NAME}.framework\nPRODUCTS_DIR=${SRCROOT}/Products\n\nFRAMEWORKS_DIR=${SRCROOT}/${FMK_NAME}/Frameworks\nLIBRARIES_DIR=${SRCROOT}/${FMK_NAME}/Library\nRESOURCES_DIR=${SRCROOT}/${FMK_NAME}/Resources\n\n# Working dir will be deleted after the framework creation.\nWRK_DIR=${BUILD_ROOT}\necho WRK_DIR\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n# -configuration ${CONFIGURATION}\n# Clean and Building both architectures.\necho 'start iphonesimulator'\nxcodebuild -configuration \"Release\" -workspace \"${FMK_NAME}\".xcworkspace -scheme \"${FMK_NAME}\" -sdk iphonesimulator OBJROOT=\"${OBJROOT}/DependantBuilds\"  clean build >/dev/null 2>&1\necho 'start iphoneos'\nxcodebuild -configuration \"Release\" -workspace \"${FMK_NAME}\".xcworkspace -scheme \"${FMK_NAME}\" -sdk iphoneos OBJROOT=\"${OBJROOT}/DependantBuilds\"\n\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\n\nmkdir -p \"${INSTALL_DIR}\"\n\n# 拷贝合并后的framework的二进制文件\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\n# 拷贝依赖的动态库\ncp -R \"${FRAMEWORKS_DIR}/\" \"${PRODUCTS_DIR}/\"\n# 拷贝依赖的静态库\ncp -R \"${LIBRARIES_DIR}/\" \"${PRODUCTS_DIR}/\"\n\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\necho \"${DEVICE_DIR}/${FMK_NAME}\"\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\n\nrm -r \"${WRK_DIR}\"\n\nopen \"${SRCROOT}/Products/\"\n";
+		};
 		D796C315A2831E4AD5C0D98D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -276,6 +329,17 @@
 			targetProxy = 0A0655C123B47F6000686B12 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0AFAA1AB23CC3D35001E1526 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AFAA1AC23CC3D35001E1526 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0A0655C823B47F6000686B12 /* Debug */ = {
@@ -398,8 +462,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 71394F5FFF710EFF6F8D2A3A /* Pods-PodLib.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L9E89VMHQT;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -413,6 +479,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wawayaya.lionet.PodLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -423,8 +490,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 80ACFD29E80B473EC2C6CB5C /* Pods-PodLib.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L9E89VMHQT;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -438,6 +507,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wawayaya.lionet.PodLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -476,6 +546,24 @@
 			};
 			name = Release;
 		};
+		0AFAA1B423CC3D86001E1526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L9E89VMHQT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0AFAA1B523CC3D86001E1526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L9E89VMHQT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -502,6 +590,15 @@
 			buildConfigurations = (
 				0A0655CE23B47F6000686B12 /* Debug */,
 				0A0655CF23B47F6000686B12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AFAA1B323CC3D86001E1526 /* Build configuration list for PBXAggregateTarget "PodLibAgg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AFAA1B423CC3D86001E1526 /* Debug */,
+				0AFAA1B523CC3D86001E1526 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
